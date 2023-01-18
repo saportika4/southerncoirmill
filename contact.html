@@ -466,7 +466,7 @@
                         <div class="contact-left">
                             <h2>Get in Touch</h2>
                             <p class="font14">* Tips on getting accurate quotes. Please include product name, order quantity, usage, special requests if any in your inquiry.</p>
-                            <form id="ajax-form" name="ajax-form" action="contact.php" method="post" class="wpcf7">
+                            <!-- <form id="ajax-form" name="ajax-form" action="https://formspree.io/f/xyyazpzb" method="post" class="wpcf7">
                                 <div class="main-form">
                                     <p>
                                         <label for="name"> <span class="error" id="err-name">please enter name</span></label>
@@ -483,13 +483,26 @@
                                         <label for="message"></label>
                                         <textarea name="message" id="message" cols="40" rows="10" class="" aria-invalid="false" placeholder="Message..." required></textarea>
                                     </p>
-                                    <p><button type="submit" id="send" class="octf-btn">Send Message</button></p>
+                                    <p><button type="submit" id="my-form-button" class="octf-btn">Send Message</button></p>
                                     <div class="clear"></div>   
                                     <div class="error" id="err-form">There was a problem validating the form please check!</div>
                                     <div class="error" id="err-timedout">The connection to the server timed out!</div>
                                     <div class="error" id="err-state"></div>
+                                    <p id="my-form-status"></p>
                                 </div>
-                            </form>
+                            </form> -->
+
+                            <form id="my-form" action="https://formspree.io/f/xyyazpzb" method="POST" style="display: flex;
+                            flex-direction: column;">
+                                <!-- <label>Email:</label> -->
+                                <input type="email" placeholder="Email" name="email" />
+                                <!-- <label>Message:</label> -->
+                                <input type="text" placeholder="Product" name="product" />
+                                <input type="text" placeholder="Message" name="message" />
+                                <button id="my-form-button" class="octf-btn" style="margin-top: 20px;">Submit</button>
+                                <p id="my-form-status" style="margin-top: 15px;
+                                font-weight: 700;"></p>
+                              </form>
 
                             <div class="clear"></div>
                             <div id="ajaxsuccess">Successfully sent!!</div>
@@ -650,5 +663,38 @@
             });
         })(jQuery);
     </script>  
+
+<script>
+    var form = document.getElementById("my-form");
+    
+    async function handleSubmit(event) {
+      event.preventDefault();
+      var status = document.getElementById("my-form-status");
+      var data = new FormData(event.target);
+      fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+            'Accept': 'application/json'
+        }
+      }).then(response => {
+        if (response.ok) {
+          status.innerHTML = "Send Successfully!";
+          form.reset()
+        } else {
+          response.json().then(data => {
+            if (Object.hasOwn(data, 'errors')) {
+              status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+            } else {
+              status.innerHTML = "Oops! There was a problem submitting your form"
+            }
+          })
+        }
+      }).catch(error => {
+        status.innerHTML = "Oops! There was a problem submitting your form"
+      });
+    }
+    form.addEventListener("submit", handleSubmit)
+</script>
 </body>
 </html>
