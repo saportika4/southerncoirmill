@@ -1382,8 +1382,8 @@ a:hover, a:active {
   line-height: 1;
 }
 #site-logo img {
-  height: 141px;
-  width: 250px;
+  height: 135px;
+  width: 230px;
 }
 #site-logo img.logo-static {
   display: block;
@@ -1417,13 +1417,14 @@ a:hover, a:active {
 }
 
 .octf-main-header {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  /* border-bottom: 1px solid rgba(255, 255, 255, 0.2); */
 }
 
 .octf-mainbar-container {
   display: flex;
   flex-flow: row wrap;
   align-items: stretch;
+  background: rgba(0,0,0,0.5);
 }
 
 .octf-mainbar {
@@ -7156,12 +7157,14 @@ div.elementor-widget-heading .elementor-heading-title {
     padding-right: 15px;
 }
 .header_mobile .mlogo_wrapper img {
-    height: 76px;
+  height: 115px;
+  width: 180px;
 }
 .header_mobile .octf-row{
     display: flex;
     flex-wrap: nowrap;
     align-items: stretch;
+    background: rgba(0,0,0,0.5);
     flex: 1 auto;
 }
 .side-panel-cinfo {
@@ -10146,8 +10149,8 @@ ul.style-default li:last-child, ol.style-default li:last-child {
     color: #fff;
 }
 .footer-logo {
-    max-width: 155px;
-    padding-bottom: 32px;
+    max-width: 200px;
+    /* padding-bottom: 32px; */
 }
 .footer-social {
     padding-top: 9px;
