@@ -1130,10 +1130,18 @@
         window.jQuery = window.$ = jQuery;  
         (function($) { "use strict";
             //Preloader
+            // Royal_Preloader.config({
+            //     mode           :   'progress',
+            //     background     :   '#1a1a1a',
+            // }),
             Royal_Preloader.config({
-                mode           :   'progress',
-                background     :   '#1a1a1a',
-            });
+            mode:           'logo',
+            logo:           'images/logo2.png',
+            timeout:        0,
+            showInfo:       true,
+            opacity:        1,
+            background:     ['#191919']
+        });
         })(jQuery);
     </script>  
 </body>
