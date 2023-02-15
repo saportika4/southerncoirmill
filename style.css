@@ -1424,7 +1424,7 @@ a:hover, a:active {
   display: flex;
   flex-flow: row wrap;
   align-items: stretch;
-  background: rgba(0,0,0,0.5);
+  background: rgba(0,0,0,0.7);
 }
 
 .octf-mainbar {
@@ -3825,6 +3825,10 @@ object {
 ## Icon Box
 --------------------------------------------------------------*/
 .icon-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 300px;
   padding: 37px 60px;
   transition: all 0.3s linear;
   -webkit-transition: all 0.3s linear;
@@ -7335,7 +7339,7 @@ section {
 }
 .contact-map {
     margin-top: -40px;
-    z-index: -1;
+    /* z-index: -1; */
     position: relative;
 }
 .map {
@@ -7344,7 +7348,7 @@ section {
 .map iframe {
     width: 100%;
     height: 522px;
-    filter: brightness(100%) contrast(100%) saturate(0%) blur(0) hue-rotate(0deg);
+    /* filter: brightness(100%) contrast(100%) saturate(0%) blur(0) hue-rotate(0deg); */
 }
 /* Our Services */
 .benefits-sidebar .ot-heading {
@@ -10014,9 +10018,9 @@ ul.style-default li:last-child, ol.style-default li:last-child {
 }
 .octf-sidepanel {
     padding: 0 34px 0 33px;
-    border-style: solid;
+    /* border-style: solid;
     border-width: 0 0 0 1px;
-    border-color: rgba(255,255,255,.2);
+    border-color: rgba(255,255,255,.2); */
 }
 .side-panel-block .gallery {
     padding-bottom: 30px;
