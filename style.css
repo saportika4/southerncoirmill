@@ -6131,7 +6131,7 @@ object {
 ## Miscellaneous
 --------------------------------------------------------------*/
 .site-overlay {
-  cursor: url(https://via.placeholder.com/32x32.png) 16 16, default;
+  /* cursor: url(https://via.placeholder.com/32x32.png) 16 16, default; */
   background: transparent;
   width: 100vw;
   height: 100vh;
@@ -10340,4 +10340,10 @@ ul.style-default li:last-child, ol.style-default li:last-child {
 
 .justify {
   text-align: justify;
+}
+
+.home_head {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
 }
