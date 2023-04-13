@@ -10353,3 +10353,13 @@ ul.style-default li:last-child, ol.style-default li:last-child {
 .fs-33 {
   font-size: 30px !important;
 }
+
+.padding {
+  padding: 3rem;
+}
+
+@media (max-width: 500px) {
+  .padding {
+    padding: 1rem;
+  }
+}
