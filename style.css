@@ -4562,7 +4562,8 @@ object {
 .ot-accordions .acc-item .acc-content {
   display: none;
   padding: 0 20px 27px 0;
-  font-size: 14px;
+  font-size: 19px;
+  font-weight: 700;
   line-height: 30px;
 }
 .ot-accordions .acc-item .acc-content p:last-child, .ot-accordions .acc-item .acc-content ul:last-child {
@@ -4936,6 +4937,7 @@ object {
   transform: translateY(-50%);
 }
 .support-box .icon-title h5 {
+  background: rgba(0,0,0,0.5);
   color: #fff;
   text-transform: uppercase;
   margin-bottom: 0;
@@ -10346,4 +10348,8 @@ ul.style-default li:last-child, ol.style-default li:last-child {
   font-family: "Titillium Web", sans-serif;
   font-weight: 700;
   font-size: 20px;
+}
+
+.fs-33 {
+  font-size: 30px !important;
 }
