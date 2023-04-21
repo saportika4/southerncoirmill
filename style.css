@@ -10342,7 +10342,7 @@ ul.style-default li:last-child, ol.style-default li:last-child {
 
 .justify {
   text-align: justify;
-  word-break: break-all;
+  /* word-break: break-all; */
 }
 
 .home_head {

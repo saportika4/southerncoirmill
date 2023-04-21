@@ -17,6 +17,27 @@
     <link rel="stylesheet" href="css/woocommerce.css" />
     <link rel="stylesheet" href="css/royal-preload.css" />
 
+    <script src="js/jquery.min.js"></script>
+    <script src="js/royal_preloader.min.js"></script>
+    <script>
+        window.jQuery = window.$ = jQuery;  
+        (function($) { "use strict";
+            //Preloader
+            // Royal_Preloader.config({
+            //     mode           :   'progress',
+            //     background     :   '#1a1a1a',
+            // }),
+            Royal_Preloader.config({
+            mode:           'logo',
+            logo:           'images/logo2.png',
+            timeout:        0,
+            showInfo:       true,
+            opacity:        1,
+            background:     ['#191919']
+        });
+        })(jQuery);
+    </script>
+
     <link rel="stylesheet" href="style.css" />
     <!-- REVOLUTION SLIDER CSS -->
     <link rel="stylesheet" type="text/css" href="plugins/revolution/revolution/css/settings.css">   
@@ -443,7 +464,7 @@
                             <li class="panel-list-item">
                                 <span class="panel-list-icon"><i class="ot-flaticon-phone-call"></i></span>
                                 <span class="panel-list-text">914782862104</span>
-                                <span class="panel-list-text">9447086055</span>
+                                <span class="panel-list-text">919447086055</span>
                             </li>
                         </ul>
                     </div>
@@ -1295,7 +1316,7 @@
                                 <span class="list-item-icon"><i class="ot-flaticon-phone-call"></i></span>
                                 <div>
                                     <span class="list-item-text">914782862104</span>
-                                    <span class="list-item-text">9447086055</span>
+                                    <span class="list-item-text">919447086055</span>
                                 </div>
                             </li>
                         </ul>
@@ -1328,7 +1349,7 @@
 </div><!-- #page -->
 <a id="back-to-top" href="#" class="show"><i class="ot-flaticon-left-arrow"></i></a>
         <!-- jQuery -->
-    <script src="js/jquery.min.js"></script>
+    
     <script src="js/mousewheel.min.js"></script>
     <script src="js/lightgallery-all.min.js"></script>
     <script src="js/jquery.magnific-popup.min.js"></script>
@@ -1337,7 +1358,7 @@
     <script src="js/easypiechart.min.js"></script>
     <script src="js/jquery.countdown.min.js"></script>
     <script src="js/scripts.js"></script>
-    <script src="js/royal_preloader.min.js"></script>
+    
     <!-- REVOLUTION JS FILES -->
 
     <script  src="plugins/revolution/revolution/js/jquery.themepunch.tools.min.js"></script>
@@ -1348,23 +1369,6 @@
 
     <!-- REVOLUTION SLIDER SCRIPT FILES -->
     <script  src="js/rev-script-1.js"></script>
-    <script>
-        window.jQuery = window.$ = jQuery;  
-        (function($) { "use strict";
-            //Preloader
-            // Royal_Preloader.config({
-            //     mode           :   'progress',
-            //     background     :   '#1a1a1a',
-            // }),
-            Royal_Preloader.config({
-            mode:           'logo',
-            logo:           'images/logo2.png',
-            timeout:        0,
-            showInfo:       true,
-            opacity:        1,
-            background:     ['#191919']
-        });
-        })(jQuery);
-    </script>  
+      
 </body>
 </html>
